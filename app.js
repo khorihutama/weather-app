@@ -34,8 +34,8 @@ app.get("/", async (req, res, next) => {
   const locKey = process.env.LOCATION_KEY;
   const ipAddress = req.ip;
   const myIp = '125.164.182.147';
-  // const locResponse = await fetch(`http://api.ipstack.com/${req.ip}?access_key=${locKey}`);
-  const locResponse = await fetch(`http://api.ipstack.com/${myIp}?access_key=${locKey}`);
+  const locResponse = await fetch(`http://api.ipstack.com/${req.ip}?access_key=${locKey}`);
+  // const locResponse = await fetch(`http://api.ipstack.com/${myIp}?access_key=${locKey}`);
   const location = await locResponse.json();
 
   const weatherKey = process.env.WEATHER_KEY;
