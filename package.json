@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -18,7 +18,7 @@
   "devDependencies": {
     "nodemon": "^2.0.2"
   },
-  "author": "jane-doe",
+  "author": "khori",
   "license": "MIT",
   "engines": {
     "node": "10.x"
